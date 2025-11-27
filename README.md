@@ -1,6 +1,21 @@
 # Germantown Symphony Orchestra Website
 
-A modern website for the Germantown Symphony Orchestra built with Astro, SolidJS, and deployed on Netlify.
+A modern website for the Germantown Symphony Orchestra built with Astro, SolidJS, and deployed on Netlify. This is a monorepo containing both the main website and documentation.
+
+## Project Structure
+
+```
+gso-site/
+├── site/          # Main website application
+│   ├── src/       # Source code
+│   ├── public/   # Static assets
+│   └── netlify/  # Netlify Functions
+├── docs/          # Documentation site (Starlight)
+│   └── src/       # Documentation content
+└── dist/          # Build output
+    ├── site/      # Built website
+    └── docs/      # Built documentation
+```
 
 ## Features
 
@@ -9,11 +24,13 @@ A modern website for the Germantown Symphony Orchestra built with Astro, SolidJS
 - **Editor Authentication**: Individual login for content editors to contribute articles
 - **Board Member Authentication**: Google Workspace email-based authentication for board members
 - **Admin Dashboard**: Content management for articles and events
+- **Documentation**: Comprehensive documentation site built with Starlight
 
 ## Tech Stack
 
 - **Astro**: Static site generation and framework
 - **SolidJS**: Reactive UI components
+- **Starlight**: Documentation framework
 - **Netlify Functions**: Serverless API endpoints
 - **JWT**: Authentication tokens
 - **TypeScript**: Type safety
@@ -33,21 +50,37 @@ pnpm install
 
 ### Development
 
+Run both site and docs:
+
 ```bash
 pnpm dev
 ```
 
-The site will be available at `http://localhost:4321`
+Run individually:
+
+```bash
+pnpm dev:site  # Website only
+pnpm dev:docs  # Documentation only
+```
 
 ### Build
+
+Build both:
 
 ```bash
 pnpm build
 ```
 
+Build individually:
+
+```bash
+pnpm build:site
+pnpm build:docs
+```
+
 ### Environment Variables
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the `site/` directory:
 
 ```env
 JWT_SECRET=your-secret-key-here-change-in-production
@@ -73,6 +106,16 @@ GOOGLE_WORKSPACE_DOMAIN=germantownsymphony.org
 - Full admin access
 - Can manage articles and events
 
+## Documentation
+
+The documentation site is available at `/docs` when deployed, or run `pnpm dev:docs` to view locally.
+
+Documentation covers:
+- Getting started and installation
+- Authentication system
+- Content management
+- Deployment guide
+
 ## Deployment
 
 The site is configured for Netlify deployment. Connect your GitHub repository to Netlify and set the environment variables in the Netlify dashboard.
@@ -81,32 +124,7 @@ The site is configured for Netlify deployment. Connect your GitHub repository to
 
 - Build command: `pnpm build`
 - Publish directory: `dist`
-- Functions directory: `netlify/functions`
-
-## Project Structure
-
-```
-├── src/
-│   ├── components/     # SolidJS components
-│   ├── layouts/        # Astro layouts
-│   ├── lib/            # Utility functions
-│   ├── pages/          # Astro pages (file-based routing)
-│   └── types/          # TypeScript type definitions
-├── netlify/
-│   └── functions/      # Netlify serverless functions
-├── public/             # Static assets
-└── scripts/            # Utility scripts
-```
-
-## Data Extraction
-
-To extract data from the existing website:
-
-```bash
-pnpm extract-data
-```
-
-Note: This is a placeholder script. You'll need to implement actual web scraping logic or API integration.
+- Functions directory: `site/netlify/functions`
 
 ## License
 

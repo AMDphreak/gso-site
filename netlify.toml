@@ -5,8 +5,25 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Netlify Functions
+[functions]
+  directory = "site/netlify/functions"
+
+# API routes
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
 
+# Docs routes - serve from dist/docs
+[[redirects]]
+  from = "/docs/*"
+  to = "/docs/:splat"
+  status = 200
+
+# Site routes - serve from dist/site (everything not /docs or /api)
+[[redirects]]
+  from = "/*"
+  to = "/site/:splat"
+  status = 200
+  force = false

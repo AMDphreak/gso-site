@@ -1,0 +1,33 @@
+---
+title: GSO Website Documentation
+description: Documentation for the Germantown Symphony Orchestra website and administration.
+hero:
+  tagline: Welcome to the GSO website documentation
+  actions:
+    - text: Getting Started
+      link: /guides/introduction/
+      icon: right-arrow
+    - text: Authentication Guide
+      link: /guides/authentication/
+      icon: right-arrow
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Quick Links
+
+<CardGrid stagger>
+	<Card title="Getting Started" icon="rocket">
+		Learn how to set up and run the GSO website locally.
+	</Card>
+	<Card title="Authentication" icon="key">
+		Understand the different authentication methods for members, editors, and board members.
+	</Card>
+	<Card title="Content Management" icon="pencil">
+		Learn how to create and manage articles and events.
+	</Card>
+	<Card title="Deployment" icon="cloud">
+		Deploy the site to Netlify and configure environment variables.
+	</Card>
+</CardGrid>
