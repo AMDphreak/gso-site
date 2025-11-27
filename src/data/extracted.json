@@ -1,0 +1,23 @@
+{
+  "seasons": [
+    {
+      "id": "2025-2026",
+      "name": "2025-2026 Season",
+      "year": "2025-2026",
+      "events": []
+    }
+  ],
+  "articles": [],
+  "members": [],
+  "about": {
+    "description": "The Germantown Symphony Orchestra is a community orchestra dedicated to bringing beautiful music to our community.",
+    "mission": "To enrich the cultural life of our community through exceptional orchestral performances and music education programs.",
+    "history": "Founded with a vision to bring together talented musicians and share the joy of music with our community, the Germantown Symphony Orchestra has been a cornerstone of cultural life in our area."
+  },
+  "contact": {
+    "email": "info@germantownsymphony.org",
+    "phone": "",
+    "address": ""
+  }
+}
+

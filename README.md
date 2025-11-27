@@ -1,43 +1,113 @@
-# Astro Starter Kit: Minimal
+# Germantown Symphony Orchestra Website
 
-```sh
-pnpm create astro@latest -- --template minimal
+A modern website for the Germantown Symphony Orchestra built with Astro, SolidJS, and deployed on Netlify.
+
+## Features
+
+- **Public Pages**: Home, Season, About, Contact
+- **Members Area**: Shared password-protected area for orchestra members
+- **Editor Authentication**: Individual login for content editors to contribute articles
+- **Board Member Authentication**: Google Workspace email-based authentication for board members
+- **Admin Dashboard**: Content management for articles and events
+
+## Tech Stack
+
+- **Astro**: Static site generation and framework
+- **SolidJS**: Reactive UI components
+- **Netlify Functions**: Serverless API endpoints
+- **JWT**: Authentication tokens
+- **TypeScript**: Type safety
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+- pnpm
+
+### Installation
+
+```bash
+pnpm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Development
 
-## 🚀 Project Structure
+```bash
+pnpm dev
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+The site will be available at `http://localhost:4321`
 
-```text
-/
-├── public/
+### Build
+
+```bash
+pnpm build
+```
+
+### Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+JWT_SECRET=your-secret-key-here-change-in-production
+MEMBERS_PASSWORD=your-shared-members-password-here
+GOOGLE_CLIENT_ID=your-google-oauth-client-id
+GOOGLE_CLIENT_SECRET=your-google-oauth-client-secret
+GOOGLE_WORKSPACE_DOMAIN=germantownsymphony.org
+```
+
+## Authentication
+
+### Members Login
+- Uses a shared password (configured via `MEMBERS_PASSWORD` env variable)
+- Access to members-only content
+
+### Editor Login
+- Individual email/password authentication
+- Can create and edit articles
+- Access to admin dashboard
+
+### Board Member Login
+- Requires `@germantownsymphony.org` email address
+- Full admin access
+- Can manage articles and events
+
+## Deployment
+
+The site is configured for Netlify deployment. Connect your GitHub repository to Netlify and set the environment variables in the Netlify dashboard.
+
+### Netlify Configuration
+
+- Build command: `pnpm build`
+- Publish directory: `dist`
+- Functions directory: `netlify/functions`
+
+## Project Structure
+
+```
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/     # SolidJS components
+│   ├── layouts/        # Astro layouts
+│   ├── lib/            # Utility functions
+│   ├── pages/          # Astro pages (file-based routing)
+│   └── types/          # TypeScript type definitions
+├── netlify/
+│   └── functions/      # Netlify serverless functions
+├── public/             # Static assets
+└── scripts/            # Utility scripts
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Data Extraction
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+To extract data from the existing website:
 
-Any static assets, like images, can be placed in the `public/` directory.
+```bash
+pnpm extract-data
+```
 
-## 🧞 Commands
+Note: This is a placeholder script. You'll need to implement actual web scraping logic or API integration.
 
-All commands are run from the root of the project, from a terminal:
+## License
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Copyright © 2025 Germantown Symphony Orchestra

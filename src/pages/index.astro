@@ -1,16 +1,103 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Germantown Symphony Orchestra">
+  <Navigation client:load />
+  
+  <main style={{
+    'min-height': '80vh',
+    padding: '2rem',
+  }}>
+    <section style={{
+      'max-width': '1200px',
+      margin: '0 auto',
+      'text-align': 'center',
+      padding: '4rem 2rem',
+    }}>
+      <h1 style={{
+        'font-size': '3.5rem',
+        'margin-bottom': '1rem',
+        color: '#d4af37',
+        'font-family': 'Georgia, serif',
+        'font-weight': 'normal',
+      }}>
+        Germantown Symphony Orchestra
+      </h1>
+      <p style={{
+        'font-size': '1.25rem',
+        color: '#b0b0b0',
+        'margin-bottom': '3rem',
+        'max-width': '600px',
+        margin: '0 auto 3rem',
+      }}>
+        Bringing beautiful music to our community
+      </p>
+      
+      <div style={{
+        display: 'grid',
+        'grid-template-columns': 'repeat(auto-fit, minmax(300px, 1fr))',
+        gap: '2rem',
+        'margin-top': '4rem',
+      }}>
+        <a href="/season" style={{
+          padding: '2rem',
+          background: 'rgba(22, 33, 62, 0.6)',
+          'border-radius': '8px',
+          'border': '1px solid rgba(212, 175, 55, 0.3)',
+          transition: 'transform 0.2s, border-color 0.2s',
+        }}>
+          <h2 style={{ color: '#d4af37', 'margin-bottom': '1rem', 'font-family': 'Georgia, serif' }}>
+            2025-2026 Season
+          </h2>
+          <p style={{ color: '#b0b0b0' }}>
+            Explore our upcoming concerts and events
+          </p>
+        </a>
+        
+        <a href="/about" style={{
+          padding: '2rem',
+          background: 'rgba(22, 33, 62, 0.6)',
+          'border-radius': '8px',
+          'border': '1px solid rgba(212, 175, 55, 0.3)',
+          transition: 'transform 0.2s, border-color 0.2s',
+        }}>
+          <h2 style={{ color: '#d4af37', 'margin-bottom': '1rem', 'font-family': 'Georgia, serif' }}>
+            About Us
+          </h2>
+          <p style={{ color: '#b0b0b0' }}>
+            Learn about our orchestra and mission
+          </p>
+        </a>
+        
+        <a href="/members" style={{
+          padding: '2rem',
+          background: 'rgba(22, 33, 62, 0.6)',
+          'border-radius': '8px',
+          'border': '1px solid rgba(212, 175, 55, 0.3)',
+          transition: 'transform 0.2s, border-color 0.2s',
+        }}>
+          <h2 style={{ color: '#d4af37', 'margin-bottom': '1rem', 'font-family': 'Georgia, serif' }}>
+            Members Area
+          </h2>
+          <p style={{ color: '#b0b0b0' }}>
+            Access member-only resources
+          </p>
+        </a>
+      </div>
+    </section>
+  </main>
+  
+  <footer style={{
+    background: 'rgba(22, 33, 62, 0.8)',
+    padding: '2rem',
+    'text-align': 'center',
+    'border-top': '1px solid rgba(212, 175, 55, 0.2)',
+    'margin-top': '4rem',
+  }}>
+    <p style={{ color: '#b0b0b0' }}>
+      © {new Date().getFullYear()} Germantown Symphony Orchestra. All rights reserved.
+    </p>
+  </footer>
+</BaseLayout>

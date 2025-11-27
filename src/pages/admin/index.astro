@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation';
+---
+
+<BaseLayout title="Admin - Germantown Symphony Orchestra">
+  <Navigation client:load />
+  
+  <main style={{
+    'min-height': '80vh',
+    padding: '2rem',
+  }}>
+    <section style={{
+      'max-width': '1200px',
+      margin: '0 auto',
+      padding: '4rem 2rem',
+    }}>
+      <h1 style={{
+        'font-size': '3rem',
+        'margin-bottom': '2rem',
+        color: '#d4af37',
+        'font-family': 'Georgia, serif',
+        'text-align': 'center',
+      }}>
+        Admin Dashboard
+      </h1>
+      
+      <div style={{
+        display: 'grid',
+        gap: '2rem',
+        'grid-template-columns': 'repeat(auto-fit, minmax(300px, 1fr))',
+        'margin-top': '3rem',
+      }}>
+        <a href="/admin/articles" style={{
+          padding: '2rem',
+          background: 'rgba(22, 33, 62, 0.6)',
+          'border-radius': '8px',
+          'border': '1px solid rgba(212, 175, 55, 0.3)',
+        }}>
+          <h2 style={{ color: '#d4af37', 'margin-bottom': '1rem', 'font-family': 'Georgia, serif' }}>
+            Manage Articles
+          </h2>
+          <p style={{ color: '#b0b0b0' }}>
+            Create and edit articles
+          </p>
+        </a>
+        
+        <a href="/admin/events" style={{
+          padding: '2rem',
+          background: 'rgba(22, 33, 62, 0.6)',
+          'border-radius': '8px',
+          'border': '1px solid rgba(212, 175, 55, 0.3)',
+        }}>
+          <h2 style={{ color: '#d4af37', 'margin-bottom': '1rem', 'font-family': 'Georgia, serif' }}>
+            Manage Events
+          </h2>
+          <p style={{ color: '#b0b0b0' }}>
+            Add and update concert events
+          </p>
+        </a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
