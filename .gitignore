@@ -1,13 +1,10 @@
 # build output
 dist/
 .output/
-site/dist/
-docs/dist/
+.astro/
 
 # dependencies
 node_modules/
-site/node_modules/
-docs/node_modules/
 
 # logs
 npm-debug.log*
@@ -18,18 +15,22 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
-site/.env
-site/.env.production
+.env.local
+.env.*.local
+!.env*.example
 
 # macOS-specific files
 .DS_Store
 
 # Netlify
 .netlify/
-site/.netlify/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-*
+
+# OS files
+Thumbs.db

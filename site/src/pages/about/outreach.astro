@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation';
+---
+
+<BaseLayout title="Outreach - Germantown Symphony Orchestra">
+  <Navigation client:load />
+  
+  <main style={{
+    'min-height': '80vh',
+    padding: '2rem',
+  }}>
+    <section style={{
+      'max-width': '900px',
+      margin: '0 auto',
+      padding: '4rem 2rem',
+    }}>
+      <h1 style={{
+        'font-size': '3rem',
+        'margin-bottom': '2rem',
+        color: '#d4af37',
+        'font-family': 'Georgia, serif',
+        'text-align': 'center',
+      }}>
+        Outreach
+      </h1>
+      
+      <div style={{
+        'line-height': '1.8',
+        color: '#f5f5f5',
+        'font-size': '1.1rem',
+      }}>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          The Germantown Symphony Orchestra is committed to music education and community outreach.
+        </p>
+        
+        <h2 style={{
+          color: '#d4af37',
+          'margin-top': '3rem',
+          'margin-bottom': '1rem',
+          'font-family': 'Georgia, serif',
+        }}>
+          Educational Programs
+        </h2>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          We offer educational programs and performances for schools and community groups, bringing the joy of orchestral music to audiences of all ages.
+        </p>
+        
+        <h2 style={{
+          color: '#d4af37',
+          'margin-top': '3rem',
+          'margin-bottom': '1rem',
+          'font-family': 'Georgia, serif',
+        }}>
+          Community Engagement
+        </h2>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          Through our outreach efforts, we aim to make orchestral music accessible to everyone in our community.
+        </p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+

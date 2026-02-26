@@ -1,103 +1,73 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation';
+import { cn } from '../lib/utils';
 ---
 
 <BaseLayout title="Germantown Symphony Orchestra">
   <Navigation client:load />
   
-  <main style={{
-    'min-height': '80vh',
-    padding: '2rem',
-  }}>
-    <section style={{
-      'max-width': '1200px',
-      margin: '0 auto',
-      'text-align': 'center',
-      padding: '4rem 2rem',
-    }}>
-      <h1 style={{
-        'font-size': '3.5rem',
-        'margin-bottom': '1rem',
-        color: '#d4af37',
-        'font-family': 'Georgia, serif',
-        'font-weight': 'normal',
-      }}>
-        Germantown Symphony Orchestra
+  <main class="min-h-[calc(100vh-200px)] relative bg-gradient-to-br from-background via-background to-secondary">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(32,178,170,0.05)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(212,175,55,0.03)_0%,transparent_50%)] pointer-events-none" />
+    <div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_2px,rgba(0,0,0,0.03)_2px,rgba(0,0,0,0.03)_4px)] dark:bg-[repeating-linear-gradient(45deg,transparent,transparent_2px,rgba(255,255,255,0.01)_2px,rgba(255,255,255,0.01)_4px)] opacity-50 pointer-events-none" />
+    
+    <section class="container mx-auto px-4 md:px-8 py-16 md:py-24 text-center relative z-10">
+      <div class="mb-12">
+        <img 
+          src="/gso-final-logo-2023-transparent.png" 
+          alt="Germantown Symphony Orchestra"
+          class="max-w-[600px] w-full h-auto mx-auto mb-8 drop-shadow-[0_4px_20px_rgba(212,175,55,0.3)]"
+        />
+      </div>
+      
+      <h1 class="text-4xl md:text-6xl lg:text-7xl mb-6 text-gold font-serif font-semibold tracking-wide drop-shadow-lg">
+        50th Anniversary Season
       </h1>
-      <p style={{
-        'font-size': '1.25rem',
-        color: '#b0b0b0',
-        'margin-bottom': '3rem',
-        'max-width': '600px',
-        margin: '0 auto 3rem',
-      }}>
-        Bringing beautiful music to our community
+      
+      <p class="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-16 max-w-2xl mx-auto font-serif font-light leading-relaxed">
+        Celebrating five decades of bringing beautiful music to our community
       </p>
       
-      <div style={{
-        display: 'grid',
-        'grid-template-columns': 'repeat(auto-fit, minmax(300px, 1fr))',
-        gap: '2rem',
-        'margin-top': '4rem',
-      }}>
-        <a href="/season" style={{
-          padding: '2rem',
-          background: 'rgba(22, 33, 62, 0.6)',
-          'border-radius': '8px',
-          'border': '1px solid rgba(212, 175, 55, 0.3)',
-          transition: 'transform 0.2s, border-color 0.2s',
-        }}>
-          <h2 style={{ color: '#d4af37', 'margin-bottom': '1rem', 'font-family': 'Georgia, serif' }}>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12 max-w-5xl mx-auto">
+        <a href="/season" class={cn(
+          "group p-8 bg-card/50 backdrop-blur-sm rounded-xl border border-gold/20",
+          "transition-all duration-300 hover:border-gold/40 hover:bg-card/70 hover:-translate-y-1",
+          "hover:shadow-lg hover:shadow-gold/10"
+        )}>
+          <h2 class="text-gold mb-4 font-serif text-2xl font-semibold group-hover:text-gold/90 transition-colors">
             2025-2026 Season
           </h2>
-          <p style={{ color: '#b0b0b0' }}>
+          <p class="text-muted-foreground font-serif text-base leading-relaxed group-hover:text-foreground transition-colors">
             Explore our upcoming concerts and events
           </p>
         </a>
         
-        <a href="/about" style={{
-          padding: '2rem',
-          background: 'rgba(22, 33, 62, 0.6)',
-          'border-radius': '8px',
-          'border': '1px solid rgba(212, 175, 55, 0.3)',
-          transition: 'transform 0.2s, border-color 0.2s',
-        }}>
-          <h2 style={{ color: '#d4af37', 'margin-bottom': '1rem', 'font-family': 'Georgia, serif' }}>
+        <a href="/about" class={cn(
+          "group p-8 bg-card/50 backdrop-blur-sm rounded-xl border border-gold/20",
+          "transition-all duration-300 hover:border-gold/40 hover:bg-card/70 hover:-translate-y-1",
+          "hover:shadow-lg hover:shadow-gold/10"
+        )}>
+          <h2 class="text-gold mb-4 font-serif text-2xl font-semibold group-hover:text-gold/90 transition-colors">
             About Us
           </h2>
-          <p style={{ color: '#b0b0b0' }}>
+          <p class="text-muted-foreground font-serif text-base leading-relaxed group-hover:text-foreground transition-colors">
             Learn about our orchestra and mission
           </p>
         </a>
         
-        <a href="/members" style={{
-          padding: '2rem',
-          background: 'rgba(22, 33, 62, 0.6)',
-          'border-radius': '8px',
-          'border': '1px solid rgba(212, 175, 55, 0.3)',
-          transition: 'transform 0.2s, border-color 0.2s',
-        }}>
-          <h2 style={{ color: '#d4af37', 'margin-bottom': '1rem', 'font-family': 'Georgia, serif' }}>
+        <a href="/members" class={cn(
+          "group p-8 bg-card/50 backdrop-blur-sm rounded-xl border border-gold/20",
+          "transition-all duration-300 hover:border-gold/40 hover:bg-card/70 hover:-translate-y-1",
+          "hover:shadow-lg hover:shadow-gold/10"
+        )}>
+          <h2 class="text-gold mb-4 font-serif text-2xl font-semibold group-hover:text-gold/90 transition-colors">
             Members Area
           </h2>
-          <p style={{ color: '#b0b0b0' }}>
+          <p class="text-muted-foreground font-serif text-base leading-relaxed group-hover:text-foreground transition-colors">
             Access member-only resources
           </p>
         </a>
       </div>
     </section>
   </main>
-  
-  <footer style={{
-    background: 'rgba(22, 33, 62, 0.8)',
-    padding: '2rem',
-    'text-align': 'center',
-    'border-top': '1px solid rgba(212, 175, 55, 0.2)',
-    'margin-top': '4rem',
-  }}>
-    <p style={{ color: '#b0b0b0' }}>
-      © {new Date().getFullYear()} Germantown Symphony Orchestra. All rights reserved.
-    </p>
-  </footer>
 </BaseLayout>

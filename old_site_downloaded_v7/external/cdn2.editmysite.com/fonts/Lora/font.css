@@ -1,0 +1,44 @@
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url("external/cdn2.editmysite.com/fonts/Lora/regular.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Lora/regular.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Lora/regular.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Lora/regular.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Lora/regular.ttf") format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: url("external/cdn2.editmysite.com/fonts/Lora/bold.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Lora/bold.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Lora/bold.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Lora/bold.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Lora/bold.ttf") format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  src: url("external/cdn2.editmysite.com/fonts/Lora/italic.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Lora/italic.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Lora/italic.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Lora/italic.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Lora/italic.ttf") format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 700;
+  src: url("external/cdn2.editmysite.com/fonts/Lora/bolditalic.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Lora/bolditalic.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Lora/bolditalic.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Lora/bolditalic.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Lora/bolditalic.ttf") format('truetype'); /* Safari, Android, iOS */
+}

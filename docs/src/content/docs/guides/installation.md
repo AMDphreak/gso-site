@@ -3,8 +3,6 @@ title: Installation
 description: How to set up and run the GSO website locally
 ---
 
-# Installation
-
 ## Prerequisites
 
 - Node.js 20 or higher
@@ -14,28 +12,28 @@ description: How to set up and run the GSO website locally
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/AMDphreak/gso-site.git
-cd gso-site
-```
+    ```bash
+    git clone https://github.com/AMDphreak/gso-site.git
+    cd gso-site
+    ```
 
 2. Install dependencies:
 
-```bash
-pnpm install
-```
+    ```bash
+    pnpm install
+    ```
 
 3. Set up environment variables:
 
-Create a `.env` file in the `site/` directory:
+    Create a `.env` file in the `site/` directory:
 
-```env
-JWT_SECRET=your-secret-key-here-change-in-production
-MEMBERS_PASSWORD=your-shared-members-password-here
-GOOGLE_CLIENT_ID=your-google-oauth-client-id
-GOOGLE_CLIENT_SECRET=your-google-oauth-client-secret
-GOOGLE_WORKSPACE_DOMAIN=germantownsymphony.org
-```
+    ```env
+    JWT_SECRET=your-secret-key-here-change-in-production
+    MEMBERS_PASSWORD=your-shared-members-password-here
+    GOOGLE_CLIENT_ID=your-google-oauth-client-id
+    GOOGLE_CLIENT_SECRET=your-google-oauth-client-secret
+    GOOGLE_WORKSPACE_DOMAIN=germantownsymphony.org
+    ```
 
 ## Development
 
@@ -83,4 +81,3 @@ Preview the built site:
 ```bash
 pnpm preview:site
 ```
-

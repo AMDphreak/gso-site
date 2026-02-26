@@ -3,8 +3,6 @@ title: Content Management
 description: How to create and manage articles and events
 ---
 
-# Content Management
-
 ## Articles
 
 Editors and board members can create and manage articles through the admin dashboard.
@@ -63,4 +61,3 @@ Currently, articles are stored in-memory in Netlify Functions. For production:
 - Scheduled publishing
 - Content drafts
 - Revision history
-

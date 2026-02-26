@@ -1,0 +1,44 @@
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url("external/cdn2.editmysite.com/fonts/Playfair_Display/regular.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Playfair_Display/regular.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/regular.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/regular.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/regular.ttf") format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url("external/cdn2.editmysite.com/fonts/Playfair_Display/bold.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Playfair_Display/bold.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/bold.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/bold.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/bold.ttf") format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  src: url("external/cdn2.editmysite.com/fonts/Playfair_Display/italic.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Playfair_Display/italic.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/italic.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/italic.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/italic.ttf") format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  src: url("external/cdn2.editmysite.com/fonts/Playfair_Display/bolditalic.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Playfair_Display/bolditalic.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/bolditalic.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/bolditalic.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Playfair_Display/bolditalic.ttf") format('truetype'); /* Safari, Android, iOS */
+}

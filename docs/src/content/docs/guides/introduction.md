@@ -3,8 +3,6 @@ title: Introduction
 description: Overview of the GSO website project
 ---
 
-# Introduction
-
 Welcome to the Germantown Symphony Orchestra website documentation. This site is built with modern web technologies to provide a beautiful, performant, and maintainable platform for the orchestra.
 
 ## Tech Stack
@@ -20,7 +18,7 @@ The website is built using:
 
 The project is organized as a monorepo with two main parts:
 
-```
+```text
 gso-site/
 ├── site/          # Main website application
 ├── docs/          # Documentation (this site)
@@ -37,4 +35,3 @@ gso-site/
 - Board member authentication with Google Workspace email verification
 - Admin dashboard for content management
 - Article and event management system
-

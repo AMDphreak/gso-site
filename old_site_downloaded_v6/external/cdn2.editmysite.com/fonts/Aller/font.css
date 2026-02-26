@@ -1,0 +1,7 @@
+
+@font-face {
+	font-family: 'Aller';
+	src: url("external/cdn2.editmysite.com/fonts/Aller/regular.eot");
+	src: url("external/cdn2.editmysite.com/fonts/Aller/regular.eot") format('embedded-opentype'),
+			url("external/cdn2.editmysite.com/fonts/Aller/regular.ttf") format('truetype');
+}

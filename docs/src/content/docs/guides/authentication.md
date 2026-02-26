@@ -3,8 +3,6 @@ title: Authentication
 description: Understanding the authentication system for different user types
 ---
 
-# Authentication
-
 The GSO website supports three types of authentication:
 
 ## Members Login
@@ -58,4 +56,3 @@ All authentication methods use JWT (JSON Web Tokens) for session management:
 - Change `MEMBERS_PASSWORD` regularly
 - Implement rate limiting in production
 - Consider adding Google OAuth for board members in production
-

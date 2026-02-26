@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Navigation from '../../../components/Navigation';
+---
+
+<BaseLayout title="Music Director - Germantown Symphony Orchestra">
+  <Navigation client:load />
+  
+  <main style={{
+    'min-height': '80vh',
+    padding: '2rem',
+  }}>
+    <section style={{
+      'max-width': '900px',
+      margin: '0 auto',
+      padding: '4rem 2rem',
+    }}>
+      <h1 style={{
+        'font-size': '3rem',
+        'margin-bottom': '2rem',
+        color: '#d4af37',
+        'font-family': 'Georgia, serif',
+        'text-align': 'center',
+      }}>
+        Music Director
+      </h1>
+      
+      <div style={{
+        'line-height': '1.8',
+        color: '#f5f5f5',
+        'font-size': '1.1rem',
+      }}>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          Learn about our Music Director and their vision for the Germantown Symphony Orchestra.
+        </p>
+        
+        <h2 style={{
+          color: '#d4af37',
+          'margin-top': '3rem',
+          'margin-bottom': '1rem',
+          'font-family': 'Georgia, serif',
+        }}>
+          About Our Music Director
+        </h2>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          Our Music Director brings years of experience and passion to leading the Germantown Symphony Orchestra.
+        </p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+

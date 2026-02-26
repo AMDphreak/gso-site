@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation';
+---
+
+<BaseLayout title="Privacy Policy - Germantown Symphony Orchestra">
+  <Navigation client:load />
+  
+  <main style={{
+    'min-height': '80vh',
+    padding: '2rem',
+  }}>
+    <section style={{
+      'max-width': '900px',
+      margin: '0 auto',
+      padding: '4rem 2rem',
+    }}>
+      <h1 style={{
+        'font-size': '3rem',
+        'margin-bottom': '2rem',
+        color: '#d4af37',
+        'font-family': 'Georgia, serif',
+        'text-align': 'center',
+      }}>
+        Privacy Policy
+      </h1>
+      
+      <div style={{
+        'line-height': '1.8',
+        color: '#f5f5f5',
+        'font-size': '1.1rem',
+      }}>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          The Germantown Symphony Orchestra is committed to protecting your privacy.
+        </p>
+        
+        <h2 style={{
+          color: '#d4af37',
+          'margin-top': '3rem',
+          'margin-bottom': '1rem',
+          'font-family': 'Georgia, serif',
+        }}>
+          Information We Collect
+        </h2>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          We collect information that you provide to us directly, such as when you contact us, subscribe to our newsletter, or make a donation.
+        </p>
+        
+        <h2 style={{
+          color: '#d4af37',
+          'margin-top': '3rem',
+          'margin-bottom': '1rem',
+          'font-family': 'Georgia, serif',
+        }}>
+          How We Use Your Information
+        </h2>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          We use the information we collect to communicate with you, process donations, and improve our services.
+        </p>
+        
+        <h2 style={{
+          color: '#d4af37',
+          'margin-top': '3rem',
+          'margin-bottom': '1rem',
+          'font-family': 'Georgia, serif',
+        }}>
+          Contact Us
+        </h2>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          If you have questions about this privacy policy, please contact us at info@germantownsymphony.org
+        </p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+

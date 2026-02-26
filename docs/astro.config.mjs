@@ -35,4 +35,7 @@ export default defineConfig({
 	],
 	output: 'static',
 	outDir: '../dist/docs',
+	server: {
+		port: 4322,
+	},
 });

@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation';
+---
+
+<BaseLayout title="Supporting - Germantown Symphony Orchestra">
+  <Navigation client:load />
+  
+  <main style={{
+    'min-height': '80vh',
+    padding: '2rem',
+  }}>
+    <section style={{
+      'max-width': '1200px',
+      margin: '0 auto',
+      padding: '4rem 2rem',
+    }}>
+      <h1 style={{
+        'font-size': '3rem',
+        'margin-bottom': '2rem',
+        color: '#d4af37',
+        'font-family': 'Georgia, serif',
+        'text-align': 'center',
+      }}>
+        Supporting the Orchestra
+      </h1>
+      
+      <div style={{
+        'line-height': '1.8',
+        color: '#f5f5f5',
+        'font-size': '1.1rem',
+        'margin-bottom': '3rem',
+      }}>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          Your support helps us bring beautiful music to our community. There are many ways to support the Germantown Symphony Orchestra.
+        </p>
+      </div>
+      
+      <div style={{
+        display: 'grid',
+        gap: '2rem',
+        'grid-template-columns': 'repeat(auto-fit, minmax(300px, 1fr))',
+        'margin-top': '3rem',
+      }}>
+        <a href="/supporting/donation" style={{
+          padding: '2rem',
+          background: 'rgba(22, 33, 62, 0.6)',
+          'border-radius': '8px',
+          'border': '1px solid rgba(212, 175, 55, 0.3)',
+          transition: 'transform 0.2s, border-color 0.2s',
+        }}>
+          <h2 style={{ color: '#d4af37', 'margin-bottom': '1rem', 'font-family': 'Georgia, serif' }}>
+            Donation
+          </h2>
+          <p style={{ color: '#b0b0b0' }}>
+            Make a financial contribution to support our programs
+          </p>
+        </a>
+        
+        <a href="/supporting/advertise" style={{
+          padding: '2rem',
+          background: 'rgba(22, 33, 62, 0.6)',
+          'border-radius': '8px',
+          'border': '1px solid rgba(212, 175, 55, 0.3)',
+          transition: 'transform 0.2s, border-color 0.2s',
+        }}>
+          <h2 style={{ color: '#d4af37', 'margin-bottom': '1rem', 'font-family': 'Georgia, serif' }}>
+            Advertise
+          </h2>
+          <p style={{ color: '#b0b0b0' }}>
+            Advertise your business in our concert programs
+          </p>
+        </a>
+        
+        <a href="/supporting/supporter" style={{
+          padding: '2rem',
+          background: 'rgba(22, 33, 62, 0.6)',
+          'border-radius': '8px',
+          'border': '1px solid rgba(212, 175, 55, 0.3)',
+          transition: 'transform 0.2s, border-color 0.2s',
+        }}>
+          <h2 style={{ color: '#d4af37', 'margin-bottom': '1rem', 'font-family': 'Georgia, serif' }}>
+            Supporter
+          </h2>
+          <p style={{ color: '#b0b0b0' }}>
+            Become a supporter and enjoy special benefits
+          </p>
+        </a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+

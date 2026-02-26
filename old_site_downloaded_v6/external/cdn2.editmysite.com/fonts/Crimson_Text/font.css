@@ -1,0 +1,44 @@
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url("external/cdn2.editmysite.com/fonts/Crimson_Text/regular.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Crimson_Text/regular.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/regular.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/regular.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/regular.ttf") format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  src: url("external/cdn2.editmysite.com/fonts/Crimson_Text/italic.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Crimson_Text/italic.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/italic.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/italic.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/italic.ttf") format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  src: url("external/cdn2.editmysite.com/fonts/Crimson_Text/bold.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Crimson_Text/bold.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/bold.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/bold.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/bold.ttf") format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 700;
+  src: url("external/cdn2.editmysite.com/fonts/Crimson_Text/bolditalic.eot"); /* IE9 Compat Modes */
+  src: url("external/cdn2.editmysite.com/fonts/Crimson_Text/bolditalic.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/bolditalic.woff2") format('woff2'), /* Super Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/bolditalic.woff") format('woff'), /* Modern Browsers */
+       url("external/cdn2.editmysite.com/fonts/Crimson_Text/bolditalic.ttf") format('truetype'); /* Safari, Android, iOS */
+}

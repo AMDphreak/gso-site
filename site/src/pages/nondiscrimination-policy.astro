@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation';
+---
+
+<BaseLayout title="Nondiscrimination Policy - Germantown Symphony Orchestra">
+  <Navigation client:load />
+  
+  <main style={{
+    'min-height': '80vh',
+    padding: '2rem',
+  }}>
+    <section style={{
+      'max-width': '900px',
+      margin: '0 auto',
+      padding: '4rem 2rem',
+    }}>
+      <h1 style={{
+        'font-size': '3rem',
+        'margin-bottom': '2rem',
+        color: '#d4af37',
+        'font-family': 'Georgia, serif',
+        'text-align': 'center',
+      }}>
+        Nondiscrimination Policy
+      </h1>
+      
+      <div style={{
+        'line-height': '1.8',
+        color: '#f5f5f5',
+        'font-size': '1.1rem',
+      }}>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          The Germantown Symphony Orchestra is committed to providing equal opportunities for all individuals regardless of race, color, religion, sex, national origin, age, disability, or any other protected characteristic.
+        </p>
+        
+        <h2 style={{
+          color: '#d4af37',
+          'margin-top': '3rem',
+          'margin-bottom': '1rem',
+          'font-family': 'Georgia, serif',
+        }}>
+          Our Commitment
+        </h2>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          We are dedicated to creating an inclusive environment where all members, musicians, staff, volunteers, and audience members are treated with dignity and respect.
+        </p>
+        
+        <h2 style={{
+          color: '#d4af37',
+          'margin-top': '3rem',
+          'margin-bottom': '1rem',
+          'font-family': 'Georgia, serif',
+        }}>
+          Contact
+        </h2>
+        <p style={{ 'margin-bottom': '1.5rem' }}>
+          If you have concerns about discrimination or would like to report an incident, please contact us at info@germantownsymphony.org
+        </p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
