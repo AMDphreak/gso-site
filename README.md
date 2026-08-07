@@ -1,16 +1,15 @@
 <a id="readme-top"></a>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
 <div align="center">
+  <a href="https://github.com/AMDphreak/gso-site/graphs/contributors"><img src="https://img.shields.io/github/contributors/AMDphreak/gso-site.svg?style=for-the-badge" alt="Contributors"></a>
+  <a href="https://github.com/AMDphreak/gso-site/network/members"><img src="https://img.shields.io/github/forks/AMDphreak/gso-site.svg?style=for-the-badge" alt="Forks"></a>
+  <a href="https://github.com/AMDphreak/gso-site/stargazers"><img src="https://img.shields.io/github/stars/AMDphreak/gso-site.svg?style=for-the-badge" alt="Stargazers"></a>
+  <a href="https://github.com/AMDphreak/gso-site/issues"><img src="https://img.shields.io/github/issues/AMDphreak/gso-site.svg?style=for-the-badge" alt="Issues"></a>
+
   <h1>Germantown Symphony Orchestra Website</h1>
   <p>Astro + SolidJS + Tailwind site for the Germantown Symphony Orchestra, with Starlight docs, deployed on Netlify.</p>
   <p>
     <a href="https://github.com/AMDphreak/gso-site/issues">Report Bug</a>
-    ·
+    &middot;
     <a href="https://github.com/AMDphreak/gso-site/issues">Request Feature</a>
   </p>
 </div>
@@ -18,7 +17,12 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#deployment">Deployment</a></li>
@@ -39,12 +43,17 @@ Monorepo for the GSO public website and documentation: season pages, about/board
 - Light/dark theme, responsive classical design, accessible navigation
 - Docs at `/docs` when deployed
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Built With
 
-- Astro, SolidJS, TypeScript
-- Tailwind CSS, Lucide Icons
-- Starlight (docs)
-- Netlify Functions, JWT, bcryptjs
+* **Site** — [![Astro][Astro.build]][Astro-url]
+  * [![SolidJS][SolidJS.dev]][SolidJS-url]
+  * [![TypeScript][TypeScript.com]][TypeScript-url]
+  * [![Tailwind CSS][Tailwind.com]][Tailwind-url]
+* **Docs** — [![Starlight][Starlight.astro]][Starlight-url]
+* **Hosting / auth** — [![Netlify][Netlify.com]][Netlify-url]
+  * Netlify Functions, JWT, bcryptjs, Lucide Icons
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,6 +140,14 @@ Set environment variables in the Netlify dashboard.
 
 Fork, branch, and open a pull request.
 
+### Top contributors
+
+<a href="https://github.com/AMDphreak/gso-site/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=AMDphreak/gso-site" alt="contributors" />
+</a>
+
+For per-person profile links, prefer [all-contributors](https://allcontributors.org/).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
@@ -150,11 +167,15 @@ Site: [https://ryanjohnson.dev](https://ryanjohnson.dev)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/AMDphreak/gso-site.svg?style=for-the-badge
-[contributors-url]: https://github.com/AMDphreak/gso-site/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/AMDphreak/gso-site.svg?style=for-the-badge
-[forks-url]: https://github.com/AMDphreak/gso-site/network/members
-[stars-shield]: https://img.shields.io/github/stars/AMDphreak/gso-site.svg?style=for-the-badge
-[stars-url]: https://github.com/AMDphreak/gso-site/stargazers
-[issues-shield]: https://img.shields.io/github/issues/AMDphreak/gso-site.svg?style=for-the-badge
-[issues-url]: https://github.com/AMDphreak/gso-site/issues
+[Astro.build]: https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white
+[Astro-url]: https://astro.build/
+[SolidJS.dev]: https://img.shields.io/badge/SolidJS-2C4F7C?style=for-the-badge&logo=solid&logoColor=white
+[SolidJS-url]: https://www.solidjs.com/
+[TypeScript.com]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[TypeScript-url]: https://www.typescriptlang.org/
+[Tailwind.com]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[Starlight.astro]: https://img.shields.io/badge/Starlight-D41F00?style=for-the-badge&logo=astro&logoColor=white
+[Starlight-url]: https://starlight.astro.build/
+[Netlify.com]: https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white
+[Netlify-url]: https://www.netlify.com/
